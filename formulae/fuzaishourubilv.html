@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ZW-财务管理</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="fuzaishourubilv.js"></script>
+  <style>
+    p
+    {
+      size:small;
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>ZW-财务管理</h1>
+  <p>为拥抱未来做好财务规划</p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="./index.html">首页</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./personalfinance.html">个人财务规划</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./companyfinance.html" disabled>公司财务公式</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./formulae.html">计算公式</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-12">
+    <div class="container">
+  <h2>计算公式</h2>
+  <div class="card">
+    <div class="card-header">负债收入比率</div>
+    <div class="card-body">
+    <div>衡量财务状况是否良好的重要指标。<br>该比率是某一时期（1个月，1季度或者1年）到期财务本息和收入的比值。<br>如果收入和财务支出都相对稳定，可以用年作为计算周期。<br>如果收入和财务数额变化较大，则应该以月为周期进行计算<br>这样才能更准确地反映收入满足债务支出的状况，避免某些月份因收入不足或到期债务较多而产生债务危机。 </div> 
+    <hr>
+    <div>
+    <label>负债/Debt ：</label>
+    <br><input type="number" class="form-control" placeholder="RM/$" id="fuzaishourubilv_input_debt_01">
+    <br><label>收入/Income ：</label>
+    <br><input type="number" class="form-control" placeholder="RM/$" id="fuzaishourubilv_input_income_01">
+  <hr>
+  <div>
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>安全程度</th>
+        <th>结果和建议</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>结果：</td>
+      </tr>
+      <tr>
+        <td rowspan="4" id="fuzaishourubilv_td_savemargin_01"></td>
+        <td id="fuzaishourubilv_td_result_01"></td>
+      </tr>
+      <tr>
+        <td>建议：</td>
+      </tr>
+      <tr>
+        <td id="fuzaishourubilv_td_suggestion_01"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+    </div>
+    </div> 
+    <div class="card-footer text-right"><button class="btn btn-primary" id="fuzaishourubilv_button_netprofit_01" onclick="fuzaishourubilv()">确认</button></div>
+  </div>
+  
+</div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p><a href="https://forms.gle/7gqFCX1wyacrEvmi6" target="_blank">Report</a></p>
+  <p>@Copyright by ZW</p>
+</div>
+
+</body>
+</html>
